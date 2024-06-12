@@ -30,11 +30,6 @@ The project is divided into the following files:
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
 
-3. Install the required packages:
-    ```sh
-    pip install -r requirements.txt
-    ```
-
 ## Usage
 
 Run the calculator by executing the `calculator_gui.py` file:
