@@ -25,19 +25,19 @@ To install and run the Calculator App, follow these steps:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/your-username/calculator-app.git
+   git clone https://github.com/hali011/projectuni.git
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd calculator-app
+   cd projectuni
    ```
 
 3. Install the required dependencies (if any):
 
    ```
-   pip install -r requirements.txt
+   pip install python==3.12.4
    ```
 
 4. Run the application:
@@ -60,7 +60,7 @@ To perform a calculation, follow these steps:
 1. Click the number buttons to enter the first operand.
 2. Click the desired operator button (+, -, *, /).
 3. Click the number buttons to enter the second operand.
-4. Click the equals (=) button to evaluate the expression and display the result.
+4. Click the equals (=) or use enter button to evaluate the expression and display the result.
 
 The clear (C) button can be used to clear the entry field and start a new calculation.
 
@@ -83,27 +83,37 @@ result = divide(15, 3)  # result = 5.0
 
 ## Tests
 
-The Calculator App includes several test suites to ensure the correctness and reliability of the application. The test suites cover functional, security, and performance aspects of the calculator.
+The Calculator App includes several test suites to ensure the correctness and reliability of the application. The test suites cover unittest, functional, security, and performance aspects of the calculator.
 
 ### Running Tests
 
 To run the tests, navigate to the project directory and execute the following commands:
 
+#### Unit Tests
+```
+cd Unittest
+python test_calculator_functions.py
+python test_calculator_gui.py
+```
+
 #### Functional Tests
 
 ```
+cd MoreTests
 python test_calculator_functional.py
 ```
 
 #### Security Tests
 
 ```
+cd MoreTests
 python test_calculator_security.py
 ```
 
 #### Performance Tests
 
 ```
+cd MoreTests
 python test_calculator_performance.py
 ```
 
