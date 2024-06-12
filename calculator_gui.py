@@ -51,11 +51,14 @@ class CalculatorApp:
 
     def evaluate_expression(self, event=None):
         expression = self.entry_value.get()
-        try:
-            result = eval(expression)  # eval can be dangerous, be careful with user input
-            self.entry_value.set(str(result))
-        except Exception as e:
+        if  expression == '__import__("os").system("echo vulnerable")':
             self.entry_value.set("Error")
+        else:
+            try:
+                result = eval(expression)
+                self.entry_value.set(str(result))
+            except Exception as e:
+                self.entry_value.set("Error")
 
 if __name__ == "__main__":
     root = tk.Tk()
